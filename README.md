@@ -61,13 +61,13 @@ PORT=5000
 
 ## Captures d'écran
 
-Les captures sont disponibles dans le dossier `projet_picture/` :
+| Page d'accueil | Formulaire d'inscription |
+|----------------|--------------------------|
+| ![Page d'accueil](projet_picture/cnia.png) | ![Formulaire d'inscription](projet_picture/cnia_1.png) |
 
-- `cnia.png` : Page d'accueil
-- `cnia_1.png` : Formulaire d'inscription
-- `cnia_2.png` : Interface administrateur
-- `cnia_3.png` : Chatbot en action
-- `cnia_4.png` : Version mobile
+| Interface admin | Chatbot | Version mobile |
+|----------------|---------|----------------|
+| ![Interface admin](projet_picture/cnia_2.png) | ![Chatbot](projet_picture/cnia_3.png) | ![Version mobile](projet_picture/cnia_4.png) |
 
 ## Structure des Fichiers
 
