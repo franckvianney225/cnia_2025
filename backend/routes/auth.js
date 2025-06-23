@@ -64,7 +64,7 @@ router.post('/create-default-admin', async (req, res) => {
 
     const admin = await User.create({
       username: 'admin',
-      password: 'admin2025', // Serahashé automatiquement
+      password: '', // Serahashé automatiquement
       role: 'admin'
     })
 

@@ -11,7 +11,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Validation simple - à remplacer par une vraie authentification
-    if (username === 'admin' && password === 'admin2025') {
+    if (username === 'admin' && password === '') {
       localStorage.setItem('isAuthenticated', 'true')
       navigate('/admin')
     } else {
