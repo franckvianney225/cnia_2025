@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.dark .text-primary {
+  color: white;
+}
+
+.dark .bg-primary {
+  background-color: rgb(15 23 42);
+}
+
+.dark .text-secondary {
+  color: rgb(209 213 219);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-poppins bg-gradient-to-br from-primaryStart to-primaryEnd text-textLight overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative transition duration-300;
+  }
+  .nav-link::after {
+      @apply content-[''] absolute w-0 h-0.5 -bottom-1 left-1/2 bg-accent transition-all duration-300 transform -translate-x-1/2;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+:root {
+  --primary-gradient-start: #093637;
+  --primary-gradient-end: #065a6b;
+  --secondary-gradient-start: #083A4A;
+  --secondary-gradient-end: #0C5E64;
+  --accent-color: #e67e22;
+  --accent-color-light: rgba(230, 126, 34, 0.5);
+  --text-light: #e0f2f1;
+  --text-dark: #062A30;
+}
